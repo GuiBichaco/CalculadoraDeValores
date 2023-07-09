@@ -15,3 +15,21 @@ calcular.addEventListener("click", function(){
     }
 
 })
+
+//Adição 
+
+const adicao = document.querySelector("div.containerA form input:nth-of-type(1)")
+const valor2 = document.querySelector("div.containerA form input:nth-of-type(2)")
+const calcular2 = document.querySelector("div.containerA div button")
+var resultado2 = document.querySelector("div.containerA div span")
+
+calcuadicaolar.addEventListener("click", function(){
+
+    if(adicao.value == "" || valor2.value ==""){
+        resultado2.innerHTML = "Insira valores válidos!"
+    }else{
+        var calculo2 = Number(adicao.value) + Number(valor2.value) 
+        resultado.innerHTML = calculo2
+    }
+
+})
