@@ -32,12 +32,10 @@ div.container{
     /* background-color: white; */
     border-radius: 15px;
     padding: 30px;
-}
-
-div.container{
     font-size: 22px;
     color: rgb(255, 255, 255);
 }
+
 
 div.container form{
     margin-bottom: 15px;
@@ -112,21 +110,4 @@ div.container div span{
     color: #ffffff;   
 }
 
-
-@media screen and (max-width: 764px){
-
-    div.container{
-        width: 100%;
-        border-radius: 0;
-        font-size: 16px;
-    }
-
-    div.container form input{
-        font-size: 12px;
-        max-width: 60px;
-    }
-
-    div.container div button{
-        font-size: 12px;
-    }
-}
+/* responsiveness coming soon */
