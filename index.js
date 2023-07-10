@@ -1,9 +1,9 @@
 // Porcentagem
 
-const porcentagem = document.querySelector("div.container form input:nth-of-type(1)")
-const valor = document.querySelector("div.container form input:nth-of-type(2)")
-const calcular = document.querySelector("div.container div button")
-var resultado = document.querySelector("div.container div span")
+const porcentagem = document.querySelector("#porcentagem")
+const valor = document.querySelector("#valor")
+const calcular = document.querySelector("#buttonCalcular")
+var resultado = document.querySelector("#resultado")
 
 calcular.addEventListener("click", function(){
 
@@ -18,18 +18,18 @@ calcular.addEventListener("click", function(){
 
 //Adição 
 
-const adicao = document.querySelector("div.containerA form input:nth-of-type(1)")
-const valor2 = document.querySelector("div.containerA form input:nth-of-type(2)")
-const calcular2 = document.querySelector("div.containerA div button")
-var resultado2 = document.querySelector("div.containerA div span")
+const adicao = document.querySelector("#adicao")
+const valor2 = document.querySelector("#valorAdicao")
+const calcular2 = document.querySelector("#buttonCalcular2")
+var resultado2 = document.querySelector("#resultado2")
 
-calcuadicaolar.addEventListener("click", function(){
+calcular2.addEventListener("click", function(){
 
     if(adicao.value == "" || valor2.value ==""){
         resultado2.innerHTML = "Insira valores válidos!"
     }else{
         var calculo2 = Number(adicao.value) + Number(valor2.value) 
-        resultado.innerHTML = calculo2
+        resultado2.innerHTML = calculo2
     }
 
 })
