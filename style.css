@@ -38,6 +38,50 @@ h4{
     padding: 15px;
 }
 
+
+.Clearbutton{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#buttonClear{
+    width: 160px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #Ff0000;
+}
+
+
+
+#buttonUnit{
+    color: #ffffff;
+    background-color: #Ff0000;
+    align-items: center;
+}
+
+#buttonClear:hover,
+#buttonUnit:hover {
+    background-color: #9c3b3b;
+}
+
+
+.buttons-calculate{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+
+
 div.container{
     /* background-color: white; */
     border-radius: 15px;
@@ -63,13 +107,14 @@ div.container form input{
     border-radius: 5px;
     border: 1px solid rgb(150,150,150);
     outline: 0;
-    transition: border 0.5s;
+    transition: border 0.3s;
 }
 
 div.container form input:hover,
 div.container form input:focus,
 div.container form input:valid{
-    border: 1px solid rgb(18, 19, 18);
+    border: 1px solid #0f0f0f;
+    
 }
 
 div.container form 
@@ -105,7 +150,7 @@ div.container div span{
 .rodape {
     padding: 1px;
     border-top: 0.4px solid #FFF2E7;
-    margin-top: 297px;
+    margin-top: 150px;
     
 }
 /* .rodape2 {

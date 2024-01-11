@@ -4,6 +4,7 @@ const porcentagem = document.querySelector("#porcentagem")
 const valor1 = document.querySelector("#valorPorcentagem")
 const calcular1 = document.querySelector("#buttonCalcular1")
 var resultado1 = document.querySelector("#resultado1")
+const clear = 
 
 calcular1.addEventListener("click", function(){
 
@@ -15,6 +16,23 @@ calcular1.addEventListener("click", function(){
     }
 
 })
+
+function limpar1() {
+    const camposParaLimpar = [
+        porcentagem,
+        valor1
+        
+    ];
+
+    camposParaLimpar.forEach(function(campo) {
+        campo.value = '';
+    });
+    
+    resultado1.innerHTML = '';
+}
+
+
+
 
 //Adição 
 
@@ -34,6 +52,20 @@ calcular2.addEventListener("click", function(){
 
 })
 
+
+function limpar2() {
+    const camposParaLimpar = [
+        adicao,
+        valor2
+    ];
+
+    camposParaLimpar.forEach(function(campo) {
+        campo.value = '';
+    });
+    
+    resultado2.innerHTML = '';
+}
+
 //Subtração 
 
 const subtracao = document.querySelector("#subtracao")
@@ -51,6 +83,19 @@ calcular3.addEventListener("click", function(){
     }
 
 })
+
+function limpar3() {
+    const camposParaLimpar = [
+        subtracao,
+        valor3
+    ];
+
+    camposParaLimpar.forEach(function(campo) {
+        campo.value = '';
+    });
+    
+    resultado3.innerHTML = '';
+}
 
 //Divisão 
 
@@ -70,6 +115,21 @@ calcular4.addEventListener("click", function(){
 
 })
 
+
+function limpar4() {
+    const camposParaLimpar = [
+        divisao,
+        valor4
+    ];
+
+    camposParaLimpar.forEach(function(campo) {
+        campo.value = '';
+    });
+    
+    resultado4.innerHTML = '';
+}
+
+
 //Multiplicação 
 
 const multiplicacao = document.querySelector("#multiplicacao")
@@ -87,3 +147,44 @@ calcular5.addEventListener("click", function(){
     }
 
 })
+
+function limpar5() {
+    const camposParaLimpar = [
+        multiplicacao,
+        valor5
+    ];
+
+    camposParaLimpar.forEach(function(campo) {
+        campo.value = '';
+    });
+    
+    resultado5.innerHTML = '';
+}
+
+
+// Limpar TUDO
+
+function clearText() {
+    const camposParaLimpar = [
+        porcentagem,
+        valor1,
+        adicao,
+        valor2,
+        subtracao,
+        valor3,
+        divisao,
+        valor4,
+        multiplicacao,
+        valor5
+    ];
+
+    camposParaLimpar.forEach(function(campo) {
+        campo.value = '';
+    });
+    
+    resultado1.innerHTML = '';
+    resultado2.innerHTML = '';
+    resultado3.innerHTML = '';
+    resultado4.innerHTML = '';
+    resultado5.innerHTML = '';
+}

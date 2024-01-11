@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <link rel="icon" href="./img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,8 +29,9 @@
                 <input type="number" required id="valorPorcentagem">
                 ?
             </form>
-            <div>
+            <div class="buttons-calculate">
                 <button id="buttonCalcular1">Calcular</button><span id="resultado1"></span>
+                <button id="buttonUnit" onclick="limpar1()"><i class="fa-solid fa-broom"></i> Limpar</button>
             </div>
 
             <h4>Adição:</h4>
@@ -40,8 +42,9 @@
                 <input type="number" required id="valorAdicao">
                 ?
             </form>
-            <div>
+            <div class="buttons-calculate">
                 <button id="buttonCalcular2">Calcular</button><span id="resultado2"></span>
+                <button id="buttonUnit" onclick="limpar2()"><i class="fa-solid fa-broom"></i> Limpar</button>
             </div>
 
             <h4>Subtração:</h4>
@@ -52,8 +55,9 @@
                 <input type="number" required id="valorSub">
                 ?
             </form>
-            <div>
+            <div class="buttons-calculate">
                 <button id="buttonCalcular3">Calcular</button><span id="resultado3"></span>
+                <button id="buttonUnit" onclick="limpar3()"><i class="fa-solid fa-broom"></i> Limpar</button>
             </div>
 
             <h4>Divisão:</h4>
@@ -64,8 +68,9 @@
                 <input type="number" required id="valorDivisao">
                 ?
             </form>
-            <div>
+            <div class="buttons-calculate">
                 <button id="buttonCalcular4">Calcular</button><span id="resultado4"></span>
+                <button id="buttonUnit" onclick="limpar4()"><i class="fa-solid fa-broom"></i> Limpar</button>
             </div>
 
 
@@ -77,8 +82,13 @@
                 <input type="number" required id="valorMulti">
                 ?
             </form>
-            <div>
+            <div class="buttons-calculate">
                 <button id="buttonCalcular5">Calcular</button><span id="resultado5"></span>
+                <button id="buttonUnit" onclick="limpar5()"><i class="fa-solid fa-broom"></i> Limpar</button>
+            </div>
+
+            <div class="Clearbutton">
+                <button id="buttonClear" onclick="clearText()">LIMPAR TUDO</button>
             </div>
 
         </div>
