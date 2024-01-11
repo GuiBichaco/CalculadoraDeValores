@@ -1,3 +1,4 @@
+
 // Porcentagem
 
 const porcentagem = document.querySelector("#porcentagem")
