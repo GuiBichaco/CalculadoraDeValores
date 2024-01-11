@@ -15,13 +15,23 @@ body{
 
 .cabecalho{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 40px;
+    gap: 40px;
 }
 .img{
-    width: 290px;
+    width: 120px;
 }
+.title{
+    color: #ffffff;
+    font-size: 50px;
+}
+#color-black{
+    color: #0f0f0f;
+    text-decoration: underline #ffffff 2px;
+}
+
 
 h4{
     text-align: center;
