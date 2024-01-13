@@ -11,6 +11,9 @@ body{
     display: grid;
     place-items: center;
     background: linear-gradient(68.15deg, #0f0f0f 16.62%, #858585 85.61%);
+    
+
+
 }
 
 .cabecalho{
