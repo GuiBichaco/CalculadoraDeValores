@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="./img/logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/newLayout.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="logo"><img class="img" src="./img/logo.png" alt="Logo-IMG"></div>
+        <div class="titulo"><h3 class="title">CALCULADORA DE <span id="color-black">VALORES</span></h3></div>
+    </header>
+
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <button id="buttonUnit" onclick="clearDisplay()">C</button>
+        <button id="buttonPercentage" onclick="calculatePercentage()">%</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('/')">/</button>
+
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('*')">*</button>
+
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('-')">-</button>
+
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        
+    </div>
+
+    <section>
+        <footer class="rodape2">
+            <div class="rodape">
+                <div class="direitos-autorais">
+                    <p class="direitos-autorais1">® Guilherme Bichaco. © Todos os Direitos Reservados. - 2023 </p> 
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="/src/newLayout.js"></script>
+
+</body>
+</html>
